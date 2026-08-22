@@ -1,0 +1,2 @@
+import type {MetadataRoute} from "next";import {allPages} from "./content";
+export default function sitemap():MetadataRoute.Sitemap{const base="https://example.com";return [{url:base,changeFrequency:"weekly",priority:1},{url:`${base}/request-a-quote`,changeFrequency:"monthly",priority:.9},...allPages.map(p=>({url:`${base}/${p.slug}`,changeFrequency:"monthly" as const,priority:p.slug.split("/").length===1?.8:.7}))]}

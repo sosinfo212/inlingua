@@ -1,0 +1,4 @@
+import type {Metadata} from "next";import {notFound} from "next/navigation";import {allPages,getPage} from "../content";import {DetailPage} from "../components";
+export function generateStaticParams(){return allPages.map(p=>({slug:p.slug.split("/")}))}
+export async function generateMetadata({params}:{params:Promise<{slug:string[]}>}):Promise<Metadata>{const {slug}=await params;const p=getPage(slug.join("/"));if(!p)return {};return {title:p.title,description:p.description,alternates:{canonical:`/${p.slug}`},openGraph:{title:p.title,description:p.description,type:"website"},twitter:{card:"summary",title:p.title,description:p.description}}}
+export default async function Route({params}:{params:Promise<{slug:string[]}>}){const {slug}=await params;const page=getPage(slug.join("/"));if(!page)notFound();return <DetailPage page={page}/>}
