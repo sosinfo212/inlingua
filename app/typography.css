@@ -1,0 +1,46 @@
+/* Comfortable reading scale for paragraph and descriptive copy site-wide. */
+:root{--body-copy-size:18px;--lead-copy-size:21px}
+
+.lede,
+.page-hero>div>p:last-of-type,
+.service-hero h1+p,
+.sub-hero h1+p,
+.directory-hero h1+p,
+.education-hero>div>p:nth-of-type(2),
+.procurement-hero h1+p,
+.language-hero>div>div:first-child>p:last-child,
+.contact-hero>div>p:last-child{font-size:var(--lead-copy-size)!important;line-height:1.65}
+
+.path-grid p,
+.tile p,
+.split p,
+.faq details p,
+.footer-grid p,
+.form-intro p,
+.service-options article p,
+.service-flow li p,
+.scenario p,
+.document-check li p,
+.market-section p,
+.sub-audience article p,
+.sub-workflow li p,
+.sub-faq details p,
+.program-list p,
+.format-stack p,
+.academy-intro p,
+.academy-programs article p,
+.academy-fit li p,
+.capability-grid p,
+.document-vault h2+p,
+.service-catalog a p,
+.service-choice li p,
+.industry-catalog a p,
+.language-group p,
+.article-copy>p:last-of-type,
+.article-content section p,
+.contact-form-panel>p:nth-of-type(2),
+.contact-methods span{font-size:var(--body-copy-size)!important;line-height:1.65}
+
+@media(max-width:800px){
+  :root{--body-copy-size:17px;--lead-copy-size:19px}
+}
