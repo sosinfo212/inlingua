@@ -1,0 +1,85 @@
+/* Readability corrections from the site-wide rendered-page audit. */
+:root{--text-muted:#49625e;--accent-readable:#176f66}
+
+/* Bright teal remains a surface/accent color; dark teal carries small text. */
+.service-options article>span,
+.article-copy>p:first-child,
+.article-body aside p,
+.article-content>section>span,
+.article-next>p,
+.article-next a span,
+.sub-audience article>span,
+.sub-workflow>div>div>p,
+.sub-faq header p,
+.sub-related>p,
+.document-check small{color:var(--accent-readable)!important}
+
+.service-options article>span,
+.article-copy>p:first-child,
+.article-body aside p,
+.article-content>section>span,
+.article-next>p,
+.sub-audience article>span,
+.sub-workflow>div>div>p,
+.sub-faq header p,
+.sub-related>p,
+.document-check small,
+.language-group small{font-size:11px!important}
+
+.language-group small{color:var(--text-muted)!important}
+.education-programs>header>span{color:var(--accent-readable)!important}
+.related-row span{color:var(--accent-readable)!important}
+
+/* Alternating localization cards use a dark surface. */
+.options-localization article:nth-child(odd)>span{color:var(--lime)!important}
+
+/* Assessment workflow copy sits on a pale tinted panel. */
+.flow-language-assessments li p{color:#3f5754!important}
+
+/* Preserve comfortable contrast on the colored outcome cards. */
+.path-grid p{color:var(--ink)}
+.path-grid>a:nth-child(2) p{color:#d7e3e1}
+
+/* Give compact uppercase labels a little more breathing room. */
+.eyebrow,
+.service-options>header p,
+.service-flow header p,
+.document-check>p{line-height:1.5}
+
+@media(max-width:800px){
+  .language-group small{line-height:1.55;letter-spacing:.75px}
+  .path-grid p{font-size:16px}
+}
+
+/* Shared desktop and mobile header actions. */
+.nav{gap:20px;position:relative}
+.nav>nav{gap:20px}
+.nav>nav a{font-size:12px}
+.header-actions{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.header-actions .button.compact{padding:13px 15px;gap:12px;font-size:12px;white-space:nowrap}
+.placement-test{background:var(--lime);color:var(--ink)}
+.mobile-menu{display:none}
+
+@media(max-width:1100px){
+  .nav>nav,.header-actions{display:none}
+  .mobile-menu{display:block;margin-left:auto}
+  .mobile-menu summary{list-style:none;width:48px;height:48px;border:1px solid var(--ink);border-radius:50%;display:grid;place-content:center;gap:5px;cursor:pointer}
+  .mobile-menu summary::-webkit-details-marker{display:none}
+  .mobile-menu summary span{display:block;width:20px;height:2px;background:var(--ink);transition:transform .2s,opacity .2s}
+  .mobile-menu[open] summary span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .mobile-menu[open] summary span:nth-child(2){opacity:0}
+  .mobile-menu[open] summary span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .mobile-menu-panel{position:absolute;z-index:20;top:88px;left:0;right:0;background:var(--cream);border-bottom:1px solid var(--line);box-shadow:0 16px 28px rgba(18,59,56,.12);padding:28px}
+  .mobile-menu-panel nav{display:grid;grid-template-columns:repeat(2,1fr);gap:0}
+  .mobile-menu-panel nav a{padding:13px 8px;border-bottom:1px solid var(--line);font-size:14px}
+  .mobile-ctas{display:flex;justify-content:center;align-items:center;gap:10px;margin:28px auto 4px}
+  .mobile-ctas .button.compact{display:inline-flex;padding:15px 18px;font-size:13px}
+}
+
+@media(max-width:520px){
+  .mobile-menu-panel{padding:22px 20px}
+  .mobile-menu-panel nav{grid-template-columns:1fr}
+  .mobile-ctas{flex-direction:column}
+  .mobile-ctas .button{width:min(100%,310px);min-height:48px}
+  .brand span{font-size:24px}
+}

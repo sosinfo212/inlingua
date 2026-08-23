@@ -1,0 +1,22 @@
+/* Brand palette: gold #f1b335 + teal #39c0ab */
+:root{--ink:#123b38;--cream:#f8f6ef;--lime:#f1b335;--coral:#39c0ab;--line:#d6d2c5;--white:#fff;--teal-dark:#176f66;--teal-soft:#d9f3ef;--gold-soft:#f9e7b9}
+.hero{position:relative;background:linear-gradient(90deg,rgba(248,246,239,.97) 0%,rgba(248,246,239,.90) 48%,rgba(248,246,239,.12) 76%),url('/images/hero-language-access.jpg') center/cover no-repeat}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:8px;background:linear-gradient(90deg,var(--lime) 0 50%,var(--coral) 50%)}
+.hero h1 em{color:var(--teal-dark)}
+.button.lime,.service-flow li>b,.sub-workflow li>b{background:var(--lime);color:var(--ink)}
+.service-card{box-shadow:18px 18px 0 var(--coral)}
+.service-card>p,.service-card b,.inverse>p,.lime-text,.footer-grid b,.sub-hero aside>span,.sub-hero aside b{color:var(--lime)}
+.cta{background:var(--coral)}
+.article-copy>p:first-child,.article-content>section>span,.article-body aside p,.article-next>p,.service-options article>span,.document-check small,.sub-audience article>span,.sub-workflow>div>div>p,.sub-faq header p,.sub-related>p{color:var(--teal-dark)}
+.art-1{background:radial-gradient(circle at 35% 45%,var(--cream) 0 12%,transparent 12.5%),linear-gradient(135deg,var(--lime) 0 48%,#c78e1b 48% 52%,var(--ink) 52%)}
+.art-2{background:linear-gradient(90deg,var(--cream) 0 33%,var(--coral) 33% 66%,var(--ink) 66%)}
+.art-3{background:radial-gradient(circle at 20% 25%,transparent 0 11%,var(--lime) 11.5% 14%,transparent 14.5%),repeating-linear-gradient(45deg,var(--ink) 0 28px,#1b514c 28px 56px)}
+.service-hero-translation,.variant-1 .sub-hero{background:var(--coral)}
+.service-hero-transcription{background:#185f59}
+.service-hero-localization{background:#164943}
+.service-hero-language-assessments,.variant-2 .sub-hero{background:#216f66}
+.options-language-assessments article,.flow-language-assessments,.variant-2 .sub-workflow li:nth-child(2),.variant-2 .sub-workflow li:nth-child(3){background:var(--teal-soft)}
+.score-section>div{background:var(--teal-dark)}
+.wave-section{background:repeating-radial-gradient(ellipse at center,var(--lime) 0 7px,var(--ink) 8px 17px)}
+.related-row span,.article-next a span{color:var(--teal-dark)}
+.visual-hero>.shell{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}.hero-image{position:relative;margin:0;min-height:320px;overflow:hidden;border-radius:2px;box-shadow:18px 18px 0 var(--lime)}.hero-image img{position:absolute;width:100%;height:100%;object-fit:cover}.hero-image span{position:absolute;inset:0;border:1px solid rgba(255,255,255,.35)}.card-icon{display:grid!important;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--gold-soft);color:var(--ink)!important;font-size:15px!important;margin-bottom:14px}.service-hero{background-image:linear-gradient(90deg,rgba(18,59,56,.98) 0%,rgba(18,59,56,.86) 54%,rgba(18,59,56,.18) 100%),url('/images/hero-professional-services.jpg')!important;background-size:cover!important;background-position:center!important}.sub-hero{background-image:linear-gradient(90deg,rgba(18,59,56,.98) 0%,rgba(18,59,56,.84) 56%,rgba(18,59,56,.16) 100%),url('/images/hero-professional-services.jpg')!important;background-size:cover!important;background-position:center!important}.education-hero{background-image:linear-gradient(90deg,rgba(241,179,53,.96) 0%,rgba(241,179,53,.80) 54%,rgba(57,192,171,.20) 100%),url('/images/hero-education-training.jpg')!important;background-size:cover!important;background-position:center!important}.academy-hero{background-image:linear-gradient(90deg,rgba(18,59,56,.98) 0%,rgba(18,59,56,.78) 60%,rgba(18,59,56,.20) 100%),url('/images/hero-education-training.jpg')!important;background-size:cover!important;background-position:center!important}.procurement-hero{background-image:linear-gradient(90deg,rgba(57,192,171,.96) 0%,rgba(57,192,171,.80) 58%,rgba(57,192,171,.18) 100%),url('/images/hero-government.jpg')!important;background-size:cover!important;background-position:center!important}.language-hero{background-image:linear-gradient(90deg,rgba(57,192,171,.96) 0%,rgba(57,192,171,.83) 62%,rgba(57,192,171,.18) 100%),url('/images/hero-education-training.jpg')!important;background-size:cover!important;background-position:center!important}@media(max-width:800px){.visual-hero>.shell{grid-template-columns:1fr}.hero-image{min-height:240px}.hero{background-position:68% center}.service-hero,.sub-hero,.academy-hero{background-position:68% center!important}}
