@@ -54,6 +54,7 @@ main h3{font-family:"Roboto Slab",Georgia,serif!important;font-weight:600!import
 .footer-logo{width:max-content;background:#fff;padding:4px 10px;margin-bottom:18px}
 .footer-logo img{width:141px;height:78px}
 .nav nav a,.text-link{color:#000}
+.mobile-header-actions{display:none}
 .button{background:#000;color:#fff;border-radius:0}
 .button.lime,.placement-test{background:var(--lime);color:#000}
 
@@ -85,4 +86,29 @@ a:not(.button):not(.brand):not(.text-link){text-decoration-thickness:1px}
   .utility-bar>div>div a:last-child{display:none}
   .utility-bar .placement-test{font-size:11px;padding:12px;gap:8px}
   .brand-logo img{width:118px;height:auto}
+}
+
+@media(max-width:1100px){
+  .nav{height:76px;padding-left:20px;padding-right:20px;gap:10px}
+  .mobile-header-actions{display:flex;align-items:center;gap:7px;margin-left:auto}
+  .mobile-header-actions a{min-height:40px;display:inline-flex;align-items:center;justify-content:center;padding:8px 11px;background:#000;color:#fff;text-decoration:none;font-size:11px;font-weight:700;white-space:nowrap}
+  .mobile-header-actions .mobile-placement{background:var(--lime);color:#000}
+  .mobile-menu{margin-left:0}
+  .mobile-menu summary{width:42px;height:42px}
+  .mobile-menu-panel{top:76px}
+  .mobile-short{display:none}
+}
+
+@media(max-width:520px){
+  .utility-bar>.shell{min-height:38px}
+  .utility-bar>div>div a{font-size:11px}
+  .utility-bar>.shell>.placement-test{display:none}
+  .nav{height:70px;padding-left:14px;padding-right:14px;gap:7px}
+  .brand-logo img{width:94px;height:auto}
+  .mobile-header-actions{gap:5px}
+  .mobile-header-actions a{min-height:38px;padding:7px 9px;font-size:10px}
+  .mobile-long{display:none}
+  .mobile-short{display:inline}
+  .mobile-menu summary{width:38px;height:38px}
+  .mobile-menu-panel{top:70px}
 }
