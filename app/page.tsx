@@ -4,6 +4,7 @@ import { Header, Footer, Cta } from "./components";
 export const metadata = {
   title: "Language School of Boston & Language Services | inlingua",
   description: "The inlingua Language School of Boston provides language education, interpretation, translation, and corporate language solutions.",
+  alternates: {canonical: "/"},
 };
 
 const industries = [["Healthcare","Care settings and patient communication"],["Government","Public meetings and resident access"],["Legal","Proceedings, meetings, and documents"],["Education","Students, families, and campuses"],["Utilities","Customers, field teams, and safety"],["Manufacturing","Workforce communication and training"]];
