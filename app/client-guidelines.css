@@ -49,6 +49,10 @@ main h3{font-family:"Roboto Slab",Georgia,serif!important;font-weight:600!import
 .utility-bar a{color:#000;text-decoration:none;font-size:13px;font-weight:600}
 .utility-bar .placement-test{background:var(--lime);color:#000;min-height:46px;border-radius:0;text-transform:uppercase;letter-spacing:.5px}
 .nav{background:#fff;border-bottom-color:#d7d7d7}
+.brand-logo{display:flex;align-items:center;flex:0 0 auto}
+.brand-logo img{display:block;width:141px;height:78px;object-fit:contain}
+.footer-logo{width:max-content;background:#fff;padding:4px 10px;margin-bottom:18px}
+.footer-logo img{width:141px;height:78px}
 .nav nav a,.text-link{color:#000}
 .button{background:#000;color:#fff;border-radius:0}
 .button.lime,.placement-test{background:var(--lime);color:#000}
@@ -80,4 +84,5 @@ a:not(.button):not(.brand):not(.text-link){text-decoration-thickness:1px}
   .utility-bar>.shell{padding-right:0}
   .utility-bar>div>div a:last-child{display:none}
   .utility-bar .placement-test{font-size:11px;padding:12px;gap:8px}
+  .brand-logo img{width:118px;height:auto}
 }
