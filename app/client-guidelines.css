@@ -83,8 +83,8 @@ a:not(.button):not(.brand):not(.text-link){text-decoration-thickness:1px}
   h2,.section h2,.dark-section h2,.form-intro h2,main h2{font-size:40px!important}
   main h3{font-size:29px!important}
   .utility-bar>.shell{min-height:72px;padding:8px 14px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 12px}
-  .utility-contact{min-width:0;display:block}
-  .utility-phone{display:none}
+  .utility-contact{min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:3px}
+  .utility-phone{display:block;font-size:11px!important}
   .utility-email{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px!important}
   .utility-actions{gap:6px}
   .utility-bar .placement-test,.utility-quote{display:inline-flex;min-height:38px;padding:8px 10px;gap:6px;font-size:10px;text-transform:uppercase;white-space:nowrap}
@@ -101,10 +101,10 @@ a:not(.button):not(.brand):not(.text-link){text-decoration-thickness:1px}
 }
 
 @media(max-width:520px){
-  .utility-bar>.shell{min-height:76px;grid-template-columns:1fr;gap:5px;padding-top:7px;padding-bottom:7px}
-  .utility-contact{text-align:center}
+  .utility-bar>.shell{min-height:88px;grid-template-columns:1fr;gap:5px;padding-top:7px;padding-bottom:7px}
+  .utility-contact{align-items:center;text-align:center}
   .utility-actions{justify-content:center}
-  .nav{top:76px}
+  .nav{top:88px}
   .nav{height:70px;padding-left:14px;padding-right:14px;gap:7px}
   .brand-logo img{width:94px;height:auto}
   .utility-bar .placement-test,.utility-quote{min-height:32px;padding:6px 9px;font-size:9px}
