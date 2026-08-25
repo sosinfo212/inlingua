@@ -4,16 +4,14 @@ import {Header,Footer,Cta} from "./components";
 const programs=[["English programs","Build practical English for daily life, study, and work.","/language-education/english"],["Private instruction","A focused learning plan shaped around your level, schedule, and goals.","/language-education/english/private-english"],["Foreign languages","Develop communication skills for travel, relationships, and professional life.","/languages"],["Corporate training","Role-based language development for teams and leaders.","/language-education/corporate"]];
 
 const informationCards=[
-  ["Mission, Goals & Vision","Learn how inlingua Boston approaches language access, education, cross-cultural communication, and community participation.","/about"],
-  ["The inlingua Method","Explore the communication-first teaching cycle used to introduce, practice, apply, and reinforce language.","#inlingua-method"],
-  ["Student Services","Ask about the student support currently available for your selected program and learning format.","/contact"],
-  ["Administrative Staff","Meet the roles responsible for education guidance, program coordination, and student communication.","/about"],
-  ["Careers","Explore opportunities to contribute to language education and multilingual communication at inlingua Boston.","/contact"],
-  ["Opportunities","Connect with the team about teaching, partnerships, organizational programs, and community collaboration.","/contact"],
-  ["Student Information","Find practical guidance for placement, program selection, enrollment conversations, and preparing to learn.","/resources"],
-  ["About Boston","Discover the Greater Boston setting and the diverse communities that make it a valuable place to learn languages.","#about-boston"],
-  ["Location","Find inlingua Boston at 36 Baker Road in Everett, Massachusetts, minutes from Boston.","/contact"],
-  ["About Us","Learn about Language School of Boston, Inc., doing business as inlingua Boston, and the work we support.","/about"],
+  ["Mission, Goals & Vision","See the purpose, priorities, and long-term vision guiding language education and professional language access.","/language-education/mission-goals-vision"],
+  ["The inlingua Method","Explore the Communication First Approach and the active classroom practices used to develop complete language skills.","/language-education/inlingua-method"],
+  ["Student Services","Review homestay, transportation, cultural guidance, activities, and general visa-process support.","/language-education/student-services"],
+  ["Administrative Staff","Meet the people leading operations, school administration, student communication, and marketing.","/language-education/administrative-staff"],
+  ["Careers & Opportunities","Learn what inlingua Boston looks for in interpreters, translators, teachers, and other language professionals.","/language-education/careers-opportunities"],
+  ["Student Information","Understand the enrollment agreement and send an inquiry about programs, languages, and study options.","/language-education/student-information"],
+  ["About Boston","Plan life beyond the classroom with Boston-area transportation, events, universities, landmarks, and excursions.","/language-education/about-boston"],
+  ["About Us","Read the supplied history of inlingua International and the Boston school’s place within the global network.","/language-education/about-us"],
 ];
 
 export function LanguageEducationPage(){return <><Header/><main id="main" className="education-page"><section className="education-hero"><div className="shell"><p className="eyebrow">LANGUAGE EDUCATION</p><h1>Learn for the life you want to participate in.</h1><p>Choose a program around your current level, real communication goals, preferred learning format, and schedule.</p><div><Link className="button" href="/language-education/english">Explore English programs <span>→</span></Link><a href="https://my.inlingua.com/placementtest/adaptive/" target="_blank" rel="noopener noreferrer">Take the placement test ↗</a></div></div></section>
