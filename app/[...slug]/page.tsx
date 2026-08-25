@@ -1,5 +1,6 @@
 import type {Metadata} from "next";import {notFound} from "next/navigation";import {allPages,getPage} from "../content";import {DetailPage} from "../components";import {ServicePage} from "../service-pages";import {SubservicePage} from "../subservice-page";import {getSubservice,subservices} from "../subservices";
-import {LanguageEducationPage,InterpreterTrainingPage,GovernmentContractingPage} from "../pillar-pages";
+import {InterpreterTrainingPage,GovernmentContractingPage} from "../pillar-pages";
+import {LanguageEducationPage} from "../language-education-page";
 import {LanguageDirectoryPage} from "../language-directory";
 import {ServicesDirectoryPage,IndustriesDirectoryPage} from "../directory-pages";
 import {ContactPage} from "../contact-page";
