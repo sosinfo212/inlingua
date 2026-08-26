@@ -31,12 +31,13 @@ export default function Home() {
       <h1>Every language.<br/><em>Every connection.</em></h1>
       <p className="lede">The Language School of Boston and one trusted partner for professional interpretation, translation, language education, and workforce language training.</p>
       <div className="actions"><Link className="button" href="/request-a-quote">Request a quote <span>→</span></Link><Link className="text-link" href="/services">Explore solutions <span>↗</span></Link></div>
-    </div><aside className="service-card" aria-label="Core solutions">
-      <p>LANGUAGE SOLUTIONS</p>
-      <Link href="/services/interpretation"><strong>01</strong><span>Interpretation<small>On-site · Remote · Specialized</small></span><b>↗</b></Link>
-      <Link href="/services/translation"><strong>02</strong><span>Translation<small>Documents · Digital · Technical</small></span><b>↗</b></Link>
-      <Link href="/language-education"><strong>03</strong><span>Language Education<small>Individuals · Teams · Organizations</small></span><b>↗</b></Link>
-    </aside></div></section>
+      <aside className="service-card hero-service-card" aria-label="Core solutions">
+        <p>LANGUAGE SOLUTIONS</p>
+        <Link href="/services/interpretation"><strong>01</strong><span>Interpretation<small>On-site · Remote · Specialized</small></span><b>↗</b></Link>
+        <Link href="/services/translation"><strong>02</strong><span>Translation<small>Documents · Digital · Technical</small></span><b>↗</b></Link>
+        <Link href="/language-education"><strong>03</strong><span>Language Education<small>Individuals · Teams · Organizations</small></span><b>↗</b></Link>
+      </aside>
+    </div></div></section>
     <section className="proof shell"><p>Built for the moments where clarity matters most.</p><div><span>Healthcare</span><span>Government</span><span>Legal</span><span>Education</span><span>Enterprise</span></div></section>
     <section className="section shell"><div className="section-head"><p>TWO PATHS. ONE PARTNER.</p><h2>Choose the outcome you’re working toward.</h2></div><div className="path-grid two-paths">
       <Link href="/language-education"><span>01 · FOR LEARNERS</span><h3>Learn a language</h3><p>English and foreign-language programs for life, study, and work.</p><b>Find your program →</b></Link>
